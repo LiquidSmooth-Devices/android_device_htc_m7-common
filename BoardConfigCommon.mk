@@ -40,6 +40,11 @@ BOARD_MKBOOTIMG_ARGS := --ramdisk_offset 0x01800000
 TARGET_KERNEL_CONFIG := m7_defconfig
 TARGET_KERNEL_SOURCE := kernel/htc/msm8960
 
+# Optimizations
+LIQUIFY=true
+BOARD_GLOBAL_CFLAGS += -mvectorize-with-neon-quad
+BOARD_GLOBAL_CPPFLAGS += -mvectorize-with-neon-quad
+
 # Audio
 BOARD_USES_FLUENCE_INCALL := true  # use DMIC in call only
 BOARD_USES_SEPERATED_AUDIO_INPUT := true  # use distinct voice recognition use case
