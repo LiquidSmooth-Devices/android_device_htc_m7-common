@@ -37,8 +37,8 @@ BOARD_KERNEL_PAGESIZE := 2048
 BOARD_KERNEL_CMDLINE := console=ttyHSL0,115200,n8 androidboot.hardware=qcom user_debug=31 androidboot.selinux=permissive
 BOARD_KERNEL_CMDLINE += vmalloc=340M
 BOARD_MKBOOTIMG_ARGS := --ramdisk_offset 0x01800000
-TARGET_KERNEL_CONFIG := liquid_m7_defconfig
-TARGET_KERNEL_SOURCE := kernel/htc/m7
+TARGET_KERNEL_CONFIG := m7_defconfig
+TARGET_KERNEL_SOURCE := kernel/htc/msm8960
 
 # Optimizations
 LIQUIFY=true
