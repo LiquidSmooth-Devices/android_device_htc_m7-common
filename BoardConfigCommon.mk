@@ -39,8 +39,6 @@ BOARD_KERNEL_CMDLINE += vmalloc=340M
 BOARD_MKBOOTIMG_ARGS := --ramdisk_offset 0x01800000
 TARGET_KERNEL_CONFIG := liquid_m7_defconfig
 TARGET_KERNEL_SOURCE := kernel/htc/m7
-KERNEL_TOOLCHAIN := $(ANDROID_BUILD_TOP)/device/htc/m7-common//arm-eabi-4.8/bin
-KERNEL_TOOLCHAIN_PREFIX := arm-eabi-
 
 # Optimizations
 LIQUIFY=true
