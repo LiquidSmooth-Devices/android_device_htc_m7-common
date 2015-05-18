@@ -41,7 +41,11 @@ TARGET_KERNEL_CONFIG := m7_defconfig
 TARGET_KERNEL_SOURCE := kernel/htc/msm8960
 
 # Optimizations
-LIQUIFY=true
+USE_O3 := true
+STRICT := true
+GRAPHITE := true
+LTO := true
+A15_QUAD := true
 
 # Audio
 BOARD_USES_FLUENCE_INCALL := true  # use DMIC in call only
